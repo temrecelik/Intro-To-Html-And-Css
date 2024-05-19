@@ -1,0 +1,51 @@
+<!--
+    Class Ve Id Kavramları
+
+-Class ve Id'ler  <head> etiketinin içinde  bulanan Css etiketi olan <style> etiketinin içinde oluşturulurlar.
+-Class ve Id'lerin içine özellikler yazılarak diğir etiketlerin içindeki yazıları,resimleri  vs biçimlendirmeye yarar.
+-Class ve Id'ler etiketlerin başlangıç kısmının içinde class="" ya da Id=""  şeklinde çağırılarak özellikleri kullanılır
+
+1-)Classlar
+    -classlar daha geneldir içindeki özellikler uygunluğa göre web sayfasının farklı bölümlerinde kullanılabilir.
+    -<style> etiketi içinde .ClassAdi{} şeklinde oluştururlar.Parantez içine özellikler yazılır.
+
+2-)Idler
+    -Id'ler daha özeldirler bu nedenle web sayfalarının her bölümü için farklı İd oluşturmak gereklidir.Id isimleri kod tarafından
+    çekilerek kullanılır.Bu nedenle bir Id'de bulunan özelliği web sayfasının her bölümü için kullanılmamalıdır.     
+    -<style> etiketi içinde #IdAdi{} şeklinde oluştururlar.Parantez içine özellikler yazılır. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*Class olusturma islemi*/
+        .Classim{
+            color: red;
+            
+        }
+
+        /*Id olusturma islemi*/
+        #IdOlusturma{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="IdOlusturma">
+        
+        <p class="Classim">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias obcaecati optio cupiditate voluptas 
+            assumenda officiis doloremque cum qui saepe cumque, distinctio inventore alias aut, pariatur veniam deserunt! Neque
+             quos eius, eum magnam obcaecati distinctio incidunt velit corrupti explicabo sunt, unde accusamus hic dolor soluta 
+             minima laudantium praesentium ipsum laborum!    
+        </p>
+    </div>
+</body>
+</html>

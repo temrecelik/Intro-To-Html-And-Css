@@ -1,0 +1,140 @@
+<!--
+Form Etiketi
+<form> etiketi form yapmaya yarar.Form etiketi içinde kullanılan label , input ,select ,textarea ve benzer tüm  etiketler kullanılarak 
+form oluşturulur.label input ,select ,textarea etiketleri inline etiketlerdir.
+
+1.Label Etiketi
+
+-<label> etiketi  formdaki istenilen inputun adını yazmaya yarar yani name:___ kısmındaki name'i label etiketinin içine yazarız ayrıca 
+label etiketi bu ad  ile input etiketi arasında bir bağlantı kurmaya yarar bu bağlantıyı kurmak için label etiketinin giriş kısmına yazılan  
+for="" kısmı ile ınput etiketinde  giriş kısmına yazılan id="" kısmındaki  parantezler içine aynı kelimeler girilmelidir.
+Label etiketinin  içine ise kullanıcadan ne istendiğinin adı girilmelidir.
+
+NOT:Her zaman label etiketini kullanmaya gerek olmayabilir.Direkt input etiketinin üstüne metin olarakta hangi tür input istendiği 
+yazılabilir.Label etiketi sadece bu metin ile input girme alanı arasında bağlantı kurmaya yarar.Ayrıca label
+
+
+
+2.Input Etiketi
+-Form etiketinin içinde kullanılan <input> Etiketi ise formlardaki doldurma yerlerini açar.Örneğin isim
+giriniz kısmında kullanıcının ismini yazdığımız alanı <input> etiketi ile yaparız.input etiketin başlangıc kısmına;
+    *ınput tipi için: type=""
+    *label etiketi ile eşlenmesi için: id="" 
+    *Js kod tarafından gözükmesi ve erişim için name="İstenenilenInputlaAlakaliBirKelime"
+    nitelikleri girilmeledir.
+
+NOT:eğer label etiketini kullanmak istemezsek gireceğimiz input adının input girme alanının içinde yazılı olmasını sağlayabiliriz.
+Bunun için input etiketinin başlangıç kısmında placeholder="GirilecekInputAdi" niceliğini de kullanabiliriz.
+
+İnput Etiketlerinin Tipleri;
+
+*<input type="text">  :metin içerikli girişler için kullanılır.
+*<input type="password">  :şifre için kullanılır girilen şeyler nokta nokta şifre şeklinde gözükür
+*<input type="email">  : email girişi için kullanılır @ ibaresi kullanızmasa sistem otomatik olarak kabul etmez.
+*<input type="checkbox">  :kutucuk tikleme olarak kullanılır.Yaptığın sporlar yetenekler vesayre bu özellikle ile seçilebilir.
+
+*input type="radio" :Bir şeyi belirlemek için kutucuk tikleme olarak kullanılır.Eğer iki tane radio oluşturup ayriyetten name=""
+niteliğini kullanıp ikisini de aynı name'i  girersek  birini işaretlediğimizde otomatik olarak diğeri pasif olur.
+
+*<input type="file">  :dosya yükleme olarak kullanılır
+*<input type="reset value="ResetButonununAdi">  :girilen ınputları sıfırlamak için kullanılır.
+*<input type="submit value="SubmitButonunAdi">  :girilen ınputları backend tarafına göndermek için kullanılır.
+
+
+
+3.Select Etiketi:
+<select> etiketi içinde <option> etiketi kullanarak formumuzda 4-5 tane seçenek içinde bir tanesini seçme şeklinde bir arayüz
+oluşturabiliriz.Select etiketinin açılış kısmına name="" ve id="" nitelikleri girilir.İd niteliği label etiketi için kullanılır.
+name ekitine girilen kısım kod tarafından çekilir.Option etiketinin giriş kısmında ise sadece value="" niceliği kullanılır.
+option etiketlerinin içinide seçenekler yazılır.
+
+
+4.TextArea Etiketi:Text area etiketi içine açıklama metni gireceğimiz bir alan açar.Etiketin giriş kısmına rows="sayi" ve cols="sayi"
+nicelikleri ile bu alanın büyüklüğünü ayarlayabiliriz.Ayrıyetten etiketin giriş kısmına id ve name nicelikleride verilir.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+            <label for="name">Adınzı Giriniz:</label>
+            <input type="text"  id="name"  name="isimkismi">
+
+             
+             <br>
+            
+            
+            <label for="email">Email adresinizi Giriniz:</label>
+            <input type="email"  id="email"  name="mailkismi" >
+
+            
+            <br>
+
+            
+            <label for="password">Şifrenizi Giriniz:</label>
+            <input type="password" id="password" name="sifrekismi">
+
+            <br>
+            
+            
+            <!--Web sayfasında bir cinsiyet seçildiğinde diğeri seçilmez-->
+            <label for="erkek">Cinseyetin Erkekse Tıkla</label>
+            <input type="radio" id="erkek" name="cinsiyet">
+
+            <br>
+            
+            <label for="kadin">Cinsiyetin kadınsa Tıkla</label>
+            <input type="radio" id="kadin" name="cinsiyet">
+
+            
+            
+            <br>
+           
+            
+            <label for="DiplomaBigisi">Diplama Bilgisi Seciniz</label> <br>
+            
+            <select name="Diplomabilgisi" id="DiplomaBigisi">
+
+                <option value="İlkokul">İlk Okul Mezunuyun </option>
+                <option value="Lise">Lise mezunuyum</option>
+                <option value="Onlisans">Onlisans mezunuyum</option>
+                <option value="Lisans">lisans Mezunuyum</option>
+                <option value="YüksekLisans"></option>
+            </select>
+
+
+            <br>
+
+
+            <!--label etiketi yerine place holder kullandık-->
+            <textarea name="message" id="message" cols="50" rows="15" placeholder="Acıklama Giriniz"></textarea>
+
+            
+            <br>
+           
+            <input type="submit" value="Gönder">
+            <input type="reset" value="Sıfırla">
+
+    </form>
+ </body>
+</html>       
+
+
+
+        
+
+
+
+
+    
+
+
+

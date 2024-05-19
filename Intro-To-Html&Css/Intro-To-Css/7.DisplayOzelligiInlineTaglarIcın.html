@@ -1,0 +1,30 @@
+<!--
+    Display Özelliği İle Inline Elementlere Width Ve Height Verme
+
+-ınline elementler websayfasından içindeki metin kadar yep kaplar ve bu elementlerin widthini ve height'ını değiştirsek bile
+etki etmez.Ancak css özelliği olan display özelliğini display:inline-block; yaparsak artık inline elementlere width ve height verebiliriz.
+Bu özellikler örneğin bir giyim websitesinde erkek bölümüne giderken illa erkek yazan yazıya değilde onu çevresindeki kareye tıklasak
+bile websitesinin erkek bölümüne gitmeye yarar.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #InlineElementeWidthEkleme{
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+           
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="InlineElementeWidthEkleme" style="background-color: aqua;"> Erkek </a>
+    <a href="#" id="InlineElementeWidthEkleme" style="background-color:cadetblue"> Kadın </a>
+</body>
+</html>

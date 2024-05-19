@@ -1,0 +1,39 @@
+<!--
+    Psuedo Element:
+    Psuedo elementler bir tag içinde yazılan textlerin bazı özelliklerini değiştirmek için kullanılırlar.Örneğin bir metnin 
+    ilk satırının boyutunu rengini vs değiştirebiliriz.Bunun için kullanılan classa iki nokta üst üste koyup psuedo elementi yazarız.
+    Bu şekilde çalışan birçok özelliğe etki edecek psuedo element vardır.Bunu çeşitle kaynaklardan ve kullandıkça öğrenebiliriz.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .metinClassi{
+            font-size: 1.5em; /*em default boyutun 1.5 katını ifade eder*/
+            letter-spacing: 2px;
+            line-height: 1.5em;
+
+        }
+        /*1.first-line psuedo elements:classı kullanan etiketler için sadece ilk satırını seçer ve satara özellik ekler*/
+
+        .metinClassi:first-line{
+            color: red;
+        }
+        /*2.first-letter psuedo elements:classı kullanan etiketlerin içindeki metnin sadece il harfini seçer çzellik ekler*/
+        .metinClassi::first-letter{
+            color:blue;
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class="metinClassi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error commodi adipisci, harum, cumque blanditiis assumenda ducimus, nulla accusantium animi impedit corporis. Mollitia doloribus vero consequatur aperiam consequuntur nisi dicta, vel odio numquam laudantium accusamus quibusdam, delectus quis veritatis, totam vitae aspernatur eius! Inventore soluta id minima deserunt asperiores consequuntur natus?</p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!--
+    Tabloyu Şekillendirme
+    Bir tablo oluşturup toblonun elementlerini kullanarak genelden özele doğru giderek öğnendiğimiz Css özellikler ile şekillendirdik.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table ,tr ,th ,td{
+        border: 1px solid black; /*tabloya çerçeve verir*/
+        border-collapse: collapse; /*çerçeveyi tek çizgi haline döndürür.*/
+    }
+
+    table{
+        font-size: 1.5em;
+        width: 50%;
+        margin-left:auto;   
+        margin-right:auto;
+    }
+
+    thead tr{
+        background-color: green;
+    }
+    thead tr th{
+        color: white;
+    }
+
+    tbody tr {
+        text-align: center;
+        
+    }
+    tbody tr td:hover{
+        background-color: gray;
+    }
+
+    th,td{
+        padding: 10px;
+    }
+
+    
+
+</style>
+
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Maaş</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>Varol</td>
+                <td>30.000</td>
+            </tr>
+        </tbody>
+        
+        <tbody>
+            <tr>
+                <td>Büşra</td>
+                <td>Kalender</td>
+                <td>40.000</td>
+            </tr>
+        </tbody>
+        
+        <tbody>
+            <tr>
+                <td>Emre</td>
+                <td>Kazmacı</td>
+                <td>130.000</td>
+            </tr>
+        </tbody>
+    
+    </table>
+
+
+   
+
+
+</body>
+</html>

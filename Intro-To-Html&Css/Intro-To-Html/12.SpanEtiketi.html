@@ -1,0 +1,34 @@
+<!--
+    Span Etiketi
+-Span etiketi bir inline etikettir.Eğer biz bir block etiketin içine yazdığımız paragrafta belirli başlı bir kelimeyi yada
+cumleyi farklı bir renkte yazmak istersek Span etiketinin özelliklerini Css ile ayarlayıp o kelemin rengini ya da vurgusunu 
+değiştirebiliriz.Böylece o kelimeden sonraki kısım yeni satıra geçmeden devam edecektir.
+-Normalde inline etiketten sonra bir block etiket kullanırsak block etiketi yeni satır geçer yani inline elementin bittiği yerden
+devam etmez ancak span etiketi  block ekeketin içinde kullanırsak yeni satıra geçmeden sağından devam etmesine yarar.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span{
+            border: 1px solid red; /*span etiketi içinde bulunan metinleri kırmızı daire içine alır.*/
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <!--span etiketi içinde bulunan kısım kırmızı daire içine alınacak daha sonra paragraf satır atlamadan devam edecektir.-->
+     <p>Lorem ipsum dolor sit, <span>amet consectetur adipisicing elit.</span> Totam ea, asperiores quaerat ratione impedit atque sit 
+        odit eveniet sapiente cupiditate officiis ex omnis nisi temporibus dolorem maxime veritatis! Doloremque tempora alias, 
+        dolore reiciendis, iusto autem necessitatibus, neque aliquid. Rem eveniet, sed quia perferendis veritatis reprehenderit harum 
+        vitae dolorem voluptatum nostrum asperiores consequatur praesentium velit est, nam odit nihil temporibus magnam debitis maxime 
+        ipsum! Perspiciatis quidem soluta quasi eligendi vero saepe tempora repudiandae harum laboriosam, dolore quis at libero nulla 
+        fuga unde maxime neque possimus sed inventore enim culpa ab facere tempore? Ab sunt nesciunt saepe. Optio, similique.</p>
+</body>
+</html>

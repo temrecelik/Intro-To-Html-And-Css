@@ -1,0 +1,52 @@
+<!--
+    Tablo oluşturma
+
+-Tablo oluşturma işlemi <table> etiketin içinde  yapılır.
+-Tablonun Başlıklarını oluşturmak için <tr> etiketi içinde her başlık <th> etiketi içine yazılır.
+-Başlıklara veri girmek için yeni bir <tr> etiketi açılır ve etiketin içinde başlık sayısı kadar 
+<td> etiketi açılır  ve <td> etiketleri içine  veriler girilir.Her bir satıra veri girişi için bu işlem tekrarlanır.
+
+
+NOT:Tabloya kenarlık vs eklemek için css kullandık normalde kullanmazsak sadece tablo sırası oluşur.kenarlık oluşmaz
+Css özellikleri <head> etiketinin içinde <style> etiketi ile yüklenir.Daha detaylı halini Css derslerinde öğreneceksin
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>surname</th>
+            <th>salary</th>
+        </tr>
+            
+        <tr>
+            <td>Ali</td>
+            <td>Celik</td>
+            <td>12000</td>
+        </tr>
+
+        <tr>
+            <td>Mustafa</td>
+            <td>Ak</td>
+            <td>20000</td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>

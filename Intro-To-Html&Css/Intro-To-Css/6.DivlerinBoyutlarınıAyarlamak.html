@@ -1,0 +1,67 @@
+<!--
+
+    Divlerin Boyutunu Ayarlama
+
+    1-)Css kısmında Div için oluşturduğumuz class içinde width değerini %'li girersek divimiz web sayfasının yatay olarak girilen
+    kadar kısmını kapsar.Web sayfasını daraltırsakta aynı oranda divimizde daralır.
+
+    2-)Eğer div için div etikeki kullanırsak ve her ikisi içinde ayrı class belirleyip ikisininde width'ini %'li biçimde girersek
+    içteki div dıştaki divin girilen %'si kadar yer kaplar.
+
+    3-)max_width özelliği ile divin maximum olabileceği genişlik verilir.Websayfası darken genişlemeye başlayınca verilen genişliği kadar
+    div büyür daha sonra maximum değerde sabit kalır
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .divclass1{
+
+            background-color: aquamarine;
+            width: 50%;
+            height: 400px;
+            
+            overflow-y: auto; /*Web sayfası daraltılınca divden taşan metni divin dışına çıkarmaz içinde tutmaya ve
+                                aşağı kaydırarak okumaya yarayan özelliktir.*/
+           
+            
+         }   
+
+         .divclass2{
+            background-color: red;
+            width: 50%;
+            height: 200px;
+            overflow: hidden;/*websayfası küçültülünce divte taşan kısmı gizler*/
+
+         }
+
+        
+    </style>
+
+</head>
+<body>
+        <div class="divclass1">
+
+            <h1>Divlerde Yüzdeli Boyut Kullanma</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, labore! Et, libero repudiandae. Temporibus numquam vero dolorem. Doloremque aperiam nostrum architecto minima vero ipsam expedita repellendus neque accusamus, ducimus ea vel omnis officia molestiae laboriosam cumque nam, aliquam ipsum odio. Harum sint voluptates beatae velit molestiae nobis iste. Velit, ex.</p>
+        </div>
+            
+        <br>
+        
+        <div class="divclass1">
+            <div class="divclass2">
+                    <h1>Divin İçinde Div Kullanma</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sapiente!</p>
+            </div>
+
+        </div>
+
+</body>
+</html>

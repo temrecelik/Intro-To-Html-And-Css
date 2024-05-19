@@ -1,0 +1,62 @@
+<!--
+ Padding Kavramı
+
+ -Bizim divlerimizin içine yazı yazdığımız alana content alını denir.Divimizin sınırlarına da border denir.Bu divimizin
+sınırı ile divimizin için yazı yazdığımız content alanı arasındaki boşluğa ise padding denir.Bir divi kare olarak düüşünürsek
+bu divde üst padding alt padding sol padding ve sağ padding vardır.   
+
+-Padding boyutlarını ayarlamak için öncelikle tüm etiketlerin varsayılan padding özellikleri * classı ile sıfır yapılır.
+*{
+    padding:0;
+}
+
+-Padding boyutları şu Css özellikleri ile ile ayarlanır.
+    padding-right: 50px;
+    padding-top:60px;
+    padding-left:70px;
+    padding-bottom:80px;
+ 
+Not1:padding: 20px; özelliğini kullanırsak tüm padding boşlukları 20px olur.
+
+Not2: padding: 20px 40px; özelliğini kullanırsak üst ve alt padding 20px ve sağ sol padding 40px boşluk olur.
+
+Not3:Bazen divlerimizde border olur ve divin width'ini 500 verirsek ayrıyetten birde borderın bir width'i olacağı için bu değer
+510px falan çıkabilir bu durumda padding ayarlaması yaparken kaymalara neden olabilir.Bunu önlemek için yani width border 
+ile bereber 500px olsun demek için box-sizing:border-box; özelliğini kullanırız.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .paddingkullanimi{
+        padding-right: 50px;
+        padding-top:60px;
+        padding-left:150px;
+        padding-bottom:80px;
+
+        border: 5px solid black;
+        box-sizing:border-box;
+        background-color: aqua;
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="paddingkullanimi">
+
+        <h1>Padding kullanımı</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt odit enim id repudiandae et nobis ipsa unde quod possimus, mollitia itaque ipsam dolore? Suscipit deleniti temporibus fuga. Amet quis voluptatum reprehenderit, assumenda, tenetur, officiis hic similique totam molestiae suscipit natus quae! Est, minus. Pariatur dignissimos quis optio molestias accusamus distinctio.</p>
+    </div>
+</body>
+
+
+    
+</body>
+</html>

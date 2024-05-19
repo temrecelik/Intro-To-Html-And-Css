@@ -1,0 +1,26 @@
+<!--
+    Iconların Kullanımı
+-Websitesinde bulunan ıconlara fontawesome.com sitesinden bulabiliriz.Bunun için öncelikle cdnjs.com'a giderek awesome sitesisin
+Css kütüphanesini bularak kodumuz ekleriz.Ekleme yeri head tagının içinde link etiketinde yapılır.Şu şekilde yaptık.
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+-Daha sonra fontawesome sitesinde beğendiğimiz icona tıkladığımızda <i> etiketi içinde bir html kod parçası gelir.Bu kod
+parçasını koplayarak body etiketinin içinde kullandığımızda o icon artık web sayfasına gelir.Eğer link etiketi içinde link vererek
+kullanırsakta o icona tıkladığımızda da verdiğimiz linke bizi yönlendirir.Aşağıda <i class="fa-brands fa-google"></i> kodu ile google
+ iconunu bulduk ve link etiketi sayesinde o icona tıkladığımızda google'a yönlendirme yapılmasını sağladık.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  
+    <a href="http://www.google.com"> <i class="fa-brands fa-google"></i> </a>
+</body>
+</html>

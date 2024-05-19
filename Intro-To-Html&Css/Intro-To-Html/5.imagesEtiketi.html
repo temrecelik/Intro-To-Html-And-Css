@@ -1,0 +1,50 @@
+<!--
+    images etiketi
+
+-<img> etiketi ile web sayfamıza bir resim yükleyebiliriz.
+-bu etiketin kapanışı yoktur yani" <img  KOMUTLAR BURAYA YAZILIR > "şeklinde kullanılır.Aradaki boşluğu gerekli komutlar yazılır.
+-Yine bu ekikette <body> etiketi arasında kullanılır.
+
+-Boşluğu yazılabilecek şeyler şunlardır;
+ 
+    *resmin linki için: src="resimlinki" 
+    *resmin genisliği için: width="Number"
+    *resmin yüksekliği için: heigh="Number"
+    *resmin yüklenemediği durumlarda resim açıklaması için : alt="Resim acıklaması"
+
+
+Not1:Resmizi html dosyamızın bulunduğu klasöre atarak bilgisayardan da alabiliriz.Images klasörünü 2.HTML 5 GIRIS klasörüne attık.
+VE Images klasörüne de resim attık bu resmi <img> etiketi içinde src ="./Images/indir.jpg" şeklinde ulaşabiliriz.
+./ ifadesini yazdığımızda  2.HTML 5 GIRIS klasörünün alt klasörleri derleyicede seçim için çıkar oradan da klasörümüzü ve içindeki
+resmi seçebiliriz.
+
+
+not2:<img> etiketi web sayfasını yatay olarak tamamen kaplamaz sadece atılan resim boyutu  kadar yer kaplar yani resmin yanına
+yeni bir <img> etiketi ile resim daha  eklenebilir.
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Internette resim linki ile web sayfasına resim yükleme-->
+    <img src="https://cdn.ntvspor.net/0fc65041c7d8484b81e2481b734d4563.jpg?mode=crop&w=940&h=626" 
+    width="300"
+    height="300"
+    alt="icardi">
+
+  
+    <!--Images klasöründeki resmi yükleme-->
+    <img 
+    src="./Images/indir.jpg" 
+    alt="icardi pcden">
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!--
+Text Ozellikleri
+-Cssdeki ozellikleri kullanarak textlerimizi oluşturan taglara ozellikler kazandırıp textlerimizin boyutlarını konumlarını değişterebiliriz
+-Belirli başlı text özellikleri şunlardır;
+    *textleri ortalayarak yazma -> text-align:center;
+    *textleri sağa dayalı yazma -> text-align:right;
+    
+    *Harflerin arasını 1px açma ->letter-spacing:1px;
+    
+    *Textlerin altını çizme -> text-decoration:underline;
+    *Textlerin üstün kısmına çizgi çekme -> text-decoration:overline;
+    *Textlerin ortasından çizgi çekme -> text-decoration:line-through;
+    *Textlerdeki çizgileri kaldırma -> text-decoration: none;
+
+    *textlerin baş harfini büyük yazma ->text-transform:capitalize;
+    *textlerin bütün harflerini büyük yazma -> text-transform:uppercase;
+    *textlerin bütün harflerini küçük   yazma -> text-transform:lowercase;
+
+    *Texlerdeki satırlarının arasındaki mesafeyi belirleme ->line-height:24px;
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .TextOzellikler1{
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .TextOzellikler2{
+        text-align: right;
+        text-decoration: underline;
+        text-transform: lowercase;
+    }
+</style>
+<body>
+    <h1 class="TextOzellikler1">İlk classta kullanılan ozellikler</h1>
+    <h1 class="TextOzellikler2">İkinci classta kullanılan ozellikler</h1>
+</body>
+</html>

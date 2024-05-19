@@ -1,0 +1,50 @@
+<!--
+    Child Selector 
+    -websayfasında görülen her şey body etiketi için yazılır.Örneğin body etiketinin içinde 6 adet <p> etiketi kullanımş olabiliriz.
+     bu p elementleri body elementinin child elementleri olur.Biz nth-child özelliği ile tüm etiketler için chield özelliği ile
+     sıra sıra erişim yapabiliriz.
+     Örnekler;
+        p:nth-child(1):body etiketi içinde kullanılan 1. <p> etiketine erişir
+        p:nth-child(3):body etiketi içinde kullanılan 3. <p> etiketine erişir
+        p:nth-child(even):body etiketi içinde kullanılan çift numaralı <p> etiketlerine erişir
+    
+    Not:Aşağıda bu özellikleri kullanarak p etiketlerine eriştik.Sadece p etiketi için değil Body etiketi içinde kullanılabilen
+    tüm etiketler için bu özellik kullanılabilir.
+    
+        -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-size: 2em;/*default boyutun 2 katı anlamındadır.*/
+        }
+
+        p:nth-child(1){
+            color: blue;
+        }
+
+        p:nth-child(2){
+            color:red;
+        }
+
+        p:nth-child(even){
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptas neque eveniet, beatae suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptas neque eveniet, beatae suscipit.</p>   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptas neque eveniet, beatae suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptas neque eveniet, beatae suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptas neque eveniet, beatae suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti voluptas neque eveniet, beatae suscipit.</p>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!--
+Css'e Giriş
+-Css Html ile oluşturulan websayfasını renklendirmeye şekillendirmeye yarar.
+-Css 3 farklı biçimde kullanılılabilir.
+
+1.<Body> etiketinin içine yazdığımız <h1> ,<p> gibi etiketlerin giriş kısmına style="Css ozellikleri" yazılarak kullanılabilir.Bu şekilde
+kullanımda özellikler sadece yazdığımı etiketi etkiler.
+
+2.<head> etiketinin içinde <style> etiketin açtıktan sonra ya bir class veya id oluşturularak yada bir etiket tipi seçilerek 
+Css özellikleri yazilir.
+
+    A-)style etiketi içinde Class ve İd oluşturma
+            <style>
+                .YeniClassim{           //class nokta ile oluşturulur  
+                color: red;
+                height: 1o;
+            }
+
+            #yeniIdim{
+                color: blueviolet;     //id # ile oluşturulur
+                width: 12;
+            }
+        </style>
+       
+    NOT:Bu id ve classları kullanmak için kullanacağımız etiketin giriş kısmına class="classAdi"  veya id="IdAdi" yazılarak bu class
+    ve Id'lerdeki özellik kullanılabilir.
+
+    B-)Style etiketi içinde bir Etiket tipi Seçilerek Özellik verme
+         <style>
+        
+
+            h1{
+                color:chocolate;
+            
+             }
+
+        </style>
+    NOT:Bu işlem ile tüm h1 etiketlerinde yazdığımız Css özellikleri çalışır durumda olur.    
+
+3.Bir Css dosyası ile ikinci işlemdeki class veya İd oluşturma yada bir etikete özellik verme işlemini gerçekleştirerek dosya adını
+<head> etiketi içinde bir <link> etiki açarak link etiketinin giriş kısmındaki href="CssDosyasi" niceliğine Css dosyasının konumunu 
+veririz ve artık bu css dosyasındaki özelliklere erişmiş oluruz.
+    NOT:Css dosyasında kod yazarken <style> etiketi kullanılmaz direkt class id ve etiket ismi kullanılır tırnak açılır tırnak için 
+    özellikler girilir bu özellik için 1.Css'eGirisCssDosyasi isimli Css dosyamızı kullandık.
+
+
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--2.1-)<head> etiketi içinde <style> etiketleri arasında Css Özellikleri oluşturma-->
+    <style>
+        .YeniClassim{           
+            color: red;
+            height: 1o;
+            background-color: darksalmon;
+        }
+
+        #yeniIdim{
+            color: blueviolet;
+            width: 12;
+            background-color: chartreuse;
+        }
+
+
+        h1{
+            color:chocolate;
+            
+        }
+    </style>
+        
+       <!--3.1-)Dışarıdan Css dosyası oluşturup html dosyamızda kullanma--> 
+      <link rel="stylesheet" href="./1.Css'eGirisCssDosyasi.css">  
+
+</head>
+
+<body>
+
+    <!--1.Etiketlerin içinde style niceliği kullanma ile Css-->
+
+    <p style="color: blue; background-color: aquamarine;"  >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error ex aut, culpa blanditiis omnis et architecto, 
+        nulla repellendus nihil quasi vero velit nemo fuga mollitia consectetur facere magnam. Facilis, at et cumque culpa 
+        nesciunt architecto sequi? Minus cupiditate ipsum commodi distinctio eaque, hic, perferendis fugiat harum obcaecati 
+        suscipit tempora?
+    </p>
+
+    <!--2.2-)<style> etiketi içinde oluşturduğumuz Class ,id ve etiket ile oluşturduğumuz özelliği kullanma-->
+        <h1>Kirmizi Baslikli Kiz</h1>
+        
+        <p class="YeniClassim">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente cum, libero voluptatum explicabo expedita vitae 
+        ut impedit modi dicta, rerum et optio! Recusandae corporis ex dignissimos iste natus nam perferendis accusamus tenetur doloremque,
+         numquam asperiores mollitia ab delectus neque distinctio quisquam ut necessitatibus dolor sapiente eum! Id, eos quos.
+        </p>
+
+        <p id="yeniIdim">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam tempora assumenda temporibus doloribus sequi aut, 
+            fugit perspiciatis aperiam consequuntur beatae optio modi omnis! Ea debitis quo, hic libero veritatis natus ut nesciunt 
+            sit dignissimos esse odio voluptatem, laudantium dolorem similique saepe id sed, iusto labore quidem amet dolores? Ipsam, 
+            perferendis!
+        </p>
+
+        <!--3.2-)   1.Css'eGirisCssDosyasi isimli Css dosyasındaki özellikleri kullanmak-->
+        <p class="BenimClassim2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem amet corrupti exercitationem sapiente deserunt magnam 
+            modi obcaecati delectus eum eligendi, debitis dolores, officiis voluptate cupiditate ipsum. Ducimus officiis labore, minima 
+            rem perferendis maxime quos nostrum perspiciatis iusto, dolore alias atque quaerat facere eveniet omnis officia itaque quod 
+            dignissimos reprehenderit tenetur!
+
+        </p>
+        
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,95 @@
+<!--Selectors
+*Selektörler Css kodları yazarken body etiketinin içindeki etiketleri göre Css kodları yazmamıza yarar.Aşağıdaki yorum satırlarındaki
+kodları yorum satırından çıkar ve her yorum satırını sırasıyla dene.
+
+NOT:Css kodları yukarıdan aşağı doğru çalışır yani yukarıda bir etikete özellik verip bir aşağıda farklı özellik verirsek aşağıda
+yazılmış kod çalışacaktır.Bu nedenle en genel Selectorler <style> etiketi içinde en üstte en özel selectorler ise en altta olmalıdır.
+
+    
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*1.classi info veya  id'si logo olan etiketleri seçmek
+        .info , #logo{
+            color: brown;
+            background-color: aqua;
+
+        }*/
+
+        /*2.Classi info ve id'si logo olan etiketleri seçmek
+
+        #logo.info{
+            color: brown;
+            background-color: aqua;
+        }*/
+        
+        /*3. <ul> etiketinin altındaki <li> etiketlerinin altındaki <a> etiketlerini seçmek
+         ul li a{
+            color: brown;
+            background-color: aqua;
+         }*/     
+         
+         /*4.Tüm etiketleri * semboli ile seçebiliriz.
+         *{
+            color: brown;
+            background-color: aqua;
+         }
+         */
+
+         /*5.Eğer Css özellikleri yazarken bir özelliğin sonunda !important kullanımı yaparsak bir etiketin başlangıc kısmına 
+         style niceliği ile o özelliği değiştirsek bile asıl belirlediğimiz özellik değişmez.
+         */
+         h6{
+            color: brown !important;
+            background-color: aqua !important;
+         }
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1>Buyuk Su Kemeri</h1>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non.</li>
+            <li> <a href="http:www.google.com">Google'a git</a> </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+
+        </ul>
+
+    <h2 id="logo">Yaban Mersini Yemek</h2>
+
+    <p class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt magnam, natus quaerat adipisci, 
+        nam mollitia est fugit corrupti dolor nostrum! Quidem iure corporis laboriosam, odio ratione quis explicabo recusandae. 
+        Iste sapiente error eligendi. Molestias facilis in totam sapiente similique, consequuntur error nisi veritatis expedita 
+        reprehenderit illo reiciendis. Laborum, suscipit?
+    </p> <br>
+
+    <h2 id="logo">Burası Nerenin Baskenti</h2>
+
+    <p id="logo" class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Modi aspernatur, reprehenderit dignissimos eaque fugiat architecto debitis illo cumque nesciunt accusamus quidem, 
+        commodi minus, nemo ratione unde alias consequatur nostrum facere! Eos sunt voluptatibus, odio suscipit, fugiat ullam ex 
+        excepturi nostrum minus magnam, dicta nobis! Hic molestias quos facere voluptatum corrupti!
+    </p>
+
+    
+    <!--Yukarıda 5. öncülde h6 etiketi için !important kullandık bu nedenle başlık verdiğimiz özelliklere dönüşmez-->
+    <h6 style="color: chartreuse; background-color: azure;">Selamun Aleykum Haci Emmi</h6>
+
+
+</body>
+</html>

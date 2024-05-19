@@ -1,0 +1,36 @@
+<!--
+    Resim İle Linke Yönlendirme
+
+-Bir resme tıkladığımızda o resim ile kullanıcıyı bir linke gönderebiliriz.
+-Bunun için <a> etiketinin içinde <img> etiketini kullanmalayız.
+
+    1-)<a> etiketini açılış kısmının içinde kullanılacak komutlar;
+        *kullanıcıyı göndermek istedğimiz link için: href="htpp:// ilegönderelicek site linki"
+        *linke yeni sekme açarak göndermek için: target="_blank"   
+
+    2-)<a> ekiketinin içindeki <img> etiketinin içinde kullanılacak komutlar;
+        *resmin linki için: src="resimlinki" 
+        *resmin genisliği için: width="Number"
+        *resmin yüksekliği için: heigh="Number"
+        *resmin yüklenemediği durumlarda resim açıklaması için : alt="Resim acıklaması"
+
+-->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://www.google.com" target="_blank">
+        
+    <img src="https://mediatrend.mediamarkt.com.tr/wp-content/uploads/2020/10/Google-Android-Yeni-Ekosistem-2.jpg" 
+         width="200"
+         height="50"
+         alt="google'a gider">
+    </a>
+</body>
+</html>
+

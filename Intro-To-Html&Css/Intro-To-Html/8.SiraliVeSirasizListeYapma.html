@@ -1,0 +1,73 @@
+<!--
+
+Sırasız liste Yapma
+
+-Sırasız liste yaparken <ul> etiketi içinde her liste elemanı için <li> etiketi kullanılır.Eğer bir liste elemanın alt elemanları
+varsa <ul> etiketi içinde elemanı yazdığımız <li> etiketinin altında yeni bir <ul> ekiteki açarak alt elemanları da  
+sırasız biçimde yazabiliriz.
+
+
+
+Sıralı liste Yapma
+
+-Sıralı liste yaparken <ol> etiketi içinde her liste elemanı için <li> etiketi kullanılır.Eğer bir liste elemanın alt elemanları
+varsa  <ol> etiketi içinde  elemanı yazdığımız <li> etiketinin altında yeni bir <ol> ekiteki açarak alt elemanlarıda sıralı olarak 
+yazabiliriz.<ol> etiketinin açılış kısmına type="SıralanmaSekli" ile listenin rakamlamı,harflemi,romen rakamıyla mı sıralanacağını
+seçebiliriz.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Sırasız Liste oluşturma-->
+        <ul>
+            <li>Icecekler</li>
+                <ul>
+                    <li>kola</li>
+                    <li>fanta</li>
+                </ul>
+            <li>yemekler</li>
+                <ul>
+                    <li>beyti</li>
+                    <li>ızgara</li>
+                    <li>kofte</li>
+                </ul>
+        </ul>
+
+
+    <!--Sıralı liste oluşturma--> <br>
+
+    <ol type="1">
+            
+        <li>Sporlar</li>
+                <ol type="A">
+                    <li>futbol</li>
+                    <li>basketbol</li>
+                    <li>voleybol</li>
+                    <li>Tenis</li>
+                </ol>
+                       
+         <li>Kurslar</li>
+                <ol type="A">
+                    <li>İngilizce</li>
+                    <li>Yazılım</li>
+                    <li>yemek</li>
+                </ol>
+            
+        <li>Dersler</li>
+                <ol type="A">
+                    <li>Matematik</li>
+                    <li>Turkce</li>
+                    <li>Fizik</li>
+                </ol>
+    </ol>
+        
+
+</body>
+</html>

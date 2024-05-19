@@ -1,0 +1,65 @@
+<!--
+Divlere Renk Verme Ve Resim EKleme İşlemi;
+-divler içine metin girmeye yarayan kutucuklar yapmaya yarar.
+
+-Divler için Css kısmında kullanılabilecek özellikler şunlardır;
+    *yazılara arka plan rengi verme-> background-color renksecimi;    
+    *arkaplana resim ekleme-> background-image url(resminkonumu);
+    *arkaplana eklediğimiz resmi websayfasına sığdarmak için birdem fazla kıllanılmasını önlemek-> background-repeat: no-repeat;
+    *arkaplana atılan resmin belirlediğimiz boyutlara kendini ayarlaması için -> background-size: cover;
+    *Arkaplana resmini boyutlarını ayarlama -> width:Sayipx height:sayipx 
+    
+    *Divin konumunu ayarlamak için soldan şu kadar birim sağa git yukarıdan şu kadar kadar birim aşağı in demektir
+    -> position: absolute; left:Sayıpx; top:sayıpx;
+
+
+
+Not2:Aşağıda style etiketi içinde bir class oluşturduk daha sonra arka plan resmini boyutunu belirledik ve body'mizin içinde div etiketi 
+ile bir arkaplan hazırlayıp içine paragraf girdik.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .DivClassi{
+            background-image: url(/Images/indir.jpg);
+            
+            width:500px;
+            height:300px;
+            background-size: cover;
+            
+            position:absolute;
+            left: 100px;
+            top:100px;
+
+           
+         }
+           
+
+        
+    </style>
+</head>
+ 
+    <div class="DivClassi">
+        <h1 style="color: darkcyan;">ICARDI</h1>
+
+        <p style="color: black; "> <strong>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aliquid dolor vero, molestias beatae odit, 
+            a molestiae ut fuga maxime aspernatur officia provident laboriosam? Quam alias doloremque cupiditate asperiores accusantium 
+            repellat suscipit necessitatibus aperiam, quisquam dolor cum numquam tenetur esse illo cumque quis vero nihil blanditiis 
+            neque repellendus nobis accusamus laudantium. Fugiat dolorem, nisi veritatis iusto asperiores quam repellendus. Ratione 
+            impedit eligendi consectetur velit repellat! Necessitatibus placeat quae cumque quis amet culpa voluptatibus. Voluptatum 
+            molestiae cum quos a excepturi enim culpa dicta laborum ratione provident quo laboriosam ea magni voluptate unde debitis, 
+            soluta rem illo architecto, qui repudiandae, quisquam atque!
+        </strong></p>
+
+    </div>
+<body>
+    
+</body>
+</html>

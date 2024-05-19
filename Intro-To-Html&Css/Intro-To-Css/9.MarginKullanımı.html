@@ -1,0 +1,85 @@
+<!--
+ Margin Kavramı
+-Bir websayfasında birden çok div ve etiketi bulunur bu divlerin  ve etiketlerin arasındaki mesafeye ise Margin denir.
+Yine bir divin ve etiketin sol,sağ,üst ve alt marginleri vardır.
+
+-Bir etiketi oluşturup içine metin girdiğimizde websayfasından defoult olarak 8px büyüklüğünde margin boşluğu olur yani metin sağdan soldan
+yukarıdan ve aşağıdan 8px boşluk bırakılarak websayfasına taşınır.Eğer biz tüm margin ayarlarını sıfırlamak istersek.Css'deTüm etiketler 
+için kullanılan * classının içine margin:0  özelliğini yazabiliriz.Örnek Kullanım;
+    *{
+        margin:0;
+        
+    }
+
+-Css ile bir eiketin yada divin sol,sağ,üst ve alt margin boşluklarını uzunluğu ayarlamak için 
+    margin-left: 60px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+özelliklerini kullanırız.
+
+Not1:direkt margin: top right bottom left şeklinde de tek satırda da margin boşluklarına değer verilebilir.Örnek Kullanım;
+    margin: 100px 50px 70px 60px;
+
+NOt2:margin özelliğini iki paremetre girersek ilk girilen top ve right margin değeri olur ikinvi girile left ve bottom margin degeri olur
+    margin: 50px 60px;  ->top ve right'ta px boşluk olur ,bottom ve left'te 60px boşluk olur.
+
+NOT3:margin-left ve margin-right özelliklerine auto değerini girersek bu özelliği kullandığımız etiket web sayfasından kendimi
+yataya göre ortalar.
+
+NOT4:Diğelim ki 2 adet alt alt div var üstteki divin bottom margin büyüklüğü 50px alttaki divin top margin büyüklüğü 400px olsun
+bu iki divin arasındaki boşluk 400px olarak yani en büyüğe göre hesap yapılır.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+           
+        }
+
+      /*Bu classı bir etiketi verdiğimiz zaman aşağıdaki değerlerde margin boşlukları bırakacaktır.*/  
+     .MarginOzellik{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-top: 100px;
+     }   
+
+     .marginOzellik2{
+        margin-left: auto;
+        margin-right: auto;
+        
+
+
+     }
+    </style>
+
+</head>
+<body>
+  
+    <!--Divimizde class çağırarak margen boşlukları kullandırdık.-->
+    <div class="MarginOzellik"  style="background-color: aqua;">
+
+        <h1>Margin Özellikleri</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime doloremque dolorem magnam totam debitis necessitatibus atque, delectus quas animi laboriosam nesciunt exercitationem sit repudiandae rem odit recusandae voluptatem odio, laudantium tenetur ex. At voluptatum vero repellat voluptatibus rem veritatis officiis rerum eos accusamus? Dolorum iste architecto dolor necessitatibus rem!</p>
+    </div>
+    
+
+
+    <div class="marginOzellik2"  style="width: 50%; background-color: burlywood;">
+
+        <h1>Margin İle Websayfasını Ortalama</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere veritatis dicta quo, voluptate iusto aperiam beatae accusantium harum quidem odio!</p>
+
+    </div>
+</body>
+</html>
